@@ -1,0 +1,153 @@
+html {
+    box-sizing: border-box;
+}
+
+
+@media all and (min-width : 1024px)
+{
+    
+    body {
+        padding: 0;
+        margin: 0;
+        background: #2fa1f3;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .logo {
+        background: url('media/logo.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 50%;
+    }
+
+    .video {
+        width: 50%;
+        height: 50%;
+    }
+    video {
+        width: 100%;
+        height: 100%;
+    }
+
+    .links {
+        height: 50%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #playStore {
+        background: url('media/play_store.png');
+        background-size: 100% 100%;
+        height: 13vh;
+        width: 35%;
+        margin: 0 auto;
+    }
+
+    #appStore {
+        background: url('media/app_store.png');
+        background-size: 100% 100%;
+        height: 9vh;
+        width: 30%;
+        margin: 1.8vh auto;
+    }
+
+}
+
+@media all and (max-width: 1024px)
+{
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: #d6eff7;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+    }
+    
+    .logo {
+        background: url('media/logo.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 56vh;
+        width: 100%;
+    }
+    
+    video {
+        width: 100%;
+        max-height: 100%;
+    }
+    
+    .video {
+        padding: 10px 10px;
+    }
+    
+    .links {
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+        padding: 25px 5px;
+        justify-content: center;
+    }
+    
+    #playStore {
+        background: url('media/play_store.png');
+        background-size: 100% 100%;
+        height: 13vh;
+        width: 60%;
+        background-position: center;
+    }
+    
+    #appStore {
+        background: url('media/app_store.png');
+        background-size: 100% 100%;
+        height: 9vh;
+        width: 50%;
+        margin: 1.8vh auto;
+    }
+    
+    @media all and (min-height: 700px) and (width: 375px) {
+        .logo {
+            height: 46vh;
+        }
+    }
+
+    @media all and (min-height: 800px) and (width: 411px) {
+        .logo {
+            height: 50vh;
+        }
+    }
+
+    @media all and (min-width: 700px) {
+        .logo {
+            height: 74vh;
+        }
+    }
+    
+    @media all and (min-width: 950px) {
+        .links {
+            height: 26%;
+        }
+        video {
+            height: 100%;
+        }
+        .video {
+            height: 50%;
+            width: 100%;
+        }
+    }
+}
