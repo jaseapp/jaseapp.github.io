@@ -3,7 +3,7 @@ html {
 }
 
 
-@media all and (min-width : 1024px)
+@media all and (min-width : 1025px)
 {
     
     body {
@@ -80,16 +80,16 @@ html {
     
     .logo {
         position: relative;
-        height: 45vh;
+        height: 30vh;
         width: 100%;
     }
 
     .logo1 {
         background: url('media/logo.png');
-        background-size: cover;
+        background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
-        height: 33vh;
+        height: 18vh;
         width: 60%;
         position: absolute;
         top: 50%;
@@ -116,45 +116,25 @@ html {
     
     #playStore {
         background: url('media/play_store.png');
-        background-size: 100% 100%;
+        background-size: contain;
         height: 13vh;
-        width: 60%;
+        width: 57%;
+        margin: auto;
         background-position: center;
+        background-repeat: no-repeat;
     }
     
     #appStore {
         background: url('media/app_store.png');
-        background-size: 100% 100%;
+        background-size: contain;
+        background-position: center;
         height: 9vh;
         width: 50%;
         margin: 1.8vh auto;
+        background-repeat: no-repeat;
     }
     
-    @media all and (min-height: 812px) and (width: 375px) {
-        .logo1 {
-            height: 28vh;
-        }
-        .logo {
-            height: 45vh;
-        }
-    }
-
-    @media all and (height: 823px) and (width: 411px) {
-        .logo1 {
-            height: 30vh;
-        }
-    }
-
-    @media all and (min-width: 700px) {
-        .logo1 {
-            height: 45vh;
-        }
-        .logo {
-            height: 70vh;
-        }
-    }
-    
-    @media all and (min-width: 950px) {
+    @media all and (min-width: 900px) and (max-width: 1025px) {
         .links {
             height: 26%;
         }
@@ -165,5 +145,4 @@ html {
             height: 50%;
             width: 100%;
         }
-    }
 }
